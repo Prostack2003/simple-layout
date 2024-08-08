@@ -13,7 +13,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
+    max-width: 1100px;
     margin-inline: auto;
     padding-inline: 30px;
 }
@@ -110,6 +110,7 @@ body {
 /* Term section свойства */
 .main__term {
     align-items: center;
+    padding-bottom: 0;
 }
 
 .section__term-text-heading {
@@ -126,3 +127,69 @@ body {
 }
 
 /* Term section свойства */
+
+
+/* Promo section свойства */
+.main__promo {
+    background-color: #EBEBEB;
+}
+
+.main__promo-container {
+    flex-direction: column;
+    row-gap: 90px;
+}
+
+.main__promo-list {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 30px;
+}
+
+.main__promo-list-item {
+    border-top: 1px solid #C0C0C0;
+    padding-top: 20px;
+
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.main__promo-list-text {
+    font-size: 1.8em;
+    max-width: 160px;
+}
+
+.main__promo-list-text-line {
+    color: #666666;
+}
+
+.main__promo-list-text-paragraph {
+    color: #85859B;
+}
+
+.main__promo-paper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__promo-paper-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main__promo-paper-text-heading {
+    font-size: 4em;
+    color: #666666;
+    max-width: 350px;
+    line-height: 40px;
+}
+
+.main__promo-paper-text-paragraph {
+    font-size: 1.8em;
+    color: #85859B;
+    max-width: 340px;
+    line-height: 30px;
+}
+/* Promo section свойства */
