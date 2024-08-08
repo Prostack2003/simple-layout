@@ -1,3 +1,4 @@
+/* Общие свойства */
 html {
     font-size: 62.5%;
 }
@@ -22,6 +23,11 @@ body {
     column-gap: 30px;
 }
 
+/* Общие свойства */
+
+
+/* Header свойства */
+
 .header {
     padding-block: 30px;
 }
@@ -40,3 +46,5 @@ body {
 .header__buttons {
     margin-left: 60px;
 }
+
+/* Header свойства */
