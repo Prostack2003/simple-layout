@@ -18,9 +18,38 @@ body {
     padding-inline: 30px;
 }
 
+.section {
+    padding-block: 90px;
+}
+
 .buttons {
     display: flex;
     column-gap: 30px;
+}
+
+.promo-text {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.button {
+    padding: 25px 90px;
+    font-size: 2em;
+    color: #7875FE;
+    border: 1px solid #7875FE;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #7875FE;
+    color: #fff;
+}
+
+.button:focus {
+    background-color: #DAD9FB;
 }
 
 /* Общие свойства */
@@ -76,3 +105,24 @@ body {
 }
 
 /* Header свойства */
+
+
+/* Term section свойства */
+.main__term {
+    align-items: center;
+}
+
+.section__term-text-heading {
+    font-size: 6em;
+    max-width: 440px;
+    line-height: 60px;
+    color: #4C5866;
+}
+
+.section__term-text-paragraph {
+    font-size: 1.8em;
+    max-width: 435px;
+    color: #85859B;
+}
+
+/* Term section свойства */
