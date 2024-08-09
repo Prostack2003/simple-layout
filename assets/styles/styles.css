@@ -13,7 +13,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 1200px;
     margin-inline: auto;
     padding-inline: 30px;
 }
@@ -32,6 +32,14 @@ body {
     align-items: start;
     flex-direction: column;
     row-gap: 30px;
+}
+
+.promo-text__heading {
+    color: #4C5866;
+}
+
+.promo-text__paragraph {
+    color: #85859B;
 }
 
 .button {
@@ -70,12 +78,12 @@ body {
     display: flex;
     column-gap: 60px;
     font-size: 2em;
-    color: #4C5866;
 }
 
 .header__menu-list-link {
     transition: 0.5s;
     outline: none;
+    color: #4C5866;
 }
 
 .header__buttons-login {
@@ -117,13 +125,11 @@ body {
     font-size: 6em;
     max-width: 440px;
     line-height: 60px;
-    color: #4C5866;
 }
 
 .section__term-text-paragraph {
     font-size: 1.8em;
     max-width: 435px;
-    color: #85859B;
 }
 
 /* Term section свойства */
@@ -193,3 +199,86 @@ body {
     line-height: 30px;
 }
 /* Promo section свойства */
+
+
+/* Marketing section свойства */
+.section__marketing-container {
+    display: flex;
+    gap: 30px;
+}
+
+.section__marketing-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 255px;
+}
+
+.section__marketing-heading {
+    font-size: 3em;
+    color: #666666;
+    margin-top: 20px;
+}
+
+.section__marketing-subtitle {
+    font-size: 1.4em;
+    color: #B5B5BD;
+    margin-block: 8px;
+}
+
+.section__marketing-paragraph {
+    font-size: 1.8em;
+    line-height: 30px;
+    color: #85859B;
+}
+
+.section__marketing-link {
+    font-size: 2em;
+    color: #7875FE;
+    margin-top: 20px;
+    outline: none;
+    transition: 0.5s;
+}
+
+.section__marketing-link:focus {
+    background-color: #DAD9FB;
+}
+
+/* Marketing section свойства */
+
+/* Company section свойства */
+.main__company {
+    background-color: #EBEBEB;
+}
+
+.section__company-container {
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.section__company-image {
+    border: 1px solid #C4C4C4;
+    width: 255px;
+    padding: 30px 25px;
+}
+
+/* Company section свойства */
+
+/* Book section свойства */
+
+.section__book-container {
+    align-items: center;
+    gap: 30px;
+}
+
+.section__book-heading {
+    font-size: 4em;
+    max-width: 300px;
+}
+
+.section__book-paragraph {
+    font-size: 1.8em;
+    max-width: 350px;
+}
+
+/* Book section свойства */
