@@ -105,7 +105,7 @@ body {
 
 .header__buttons-login:focus,
 .header__buttons-search:focus {
-    background-color: #DAD9FB;
+    background-color: #7875FE;
 }
 
 .header__buttons {
@@ -282,3 +282,34 @@ body {
 }
 
 /* Book section свойства */
+
+/* Footer свойства */
+.footer {
+    background-color: #4C5866;
+    padding-top: 30px;
+}
+
+.footer__container {
+    margin-bottom: 30px;
+}
+
+.footer__logo {
+    filter: invert(100%) sepia(23%) saturate(0%) hue-rotate(190deg) brightness(115%) contrast(102%)
+}
+
+.footer__button:hover,
+.footer__button-image:hover {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(57%) saturate(7053%) hue-rotate(219deg) brightness(100%) contrast(100%);
+}
+
+.footer__button:focus {
+    background-color: #DAD9FB;
+}
+
+.footer__note {
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/* Footer свойства */
