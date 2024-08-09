@@ -134,18 +134,18 @@ body {
     background-color: #EBEBEB;
 }
 
-.main__promo-container {
+.section__promo-container {
     flex-direction: column;
     row-gap: 90px;
 }
 
-.main__promo-list {
+.section__promo-list {
     display: flex;
     justify-content: space-around;
     column-gap: 30px;
 }
 
-.main__promo-list-item {
+.section__promo-list-item {
     border-top: 1px solid #C0C0C0;
     padding-top: 20px;
 
@@ -154,39 +154,39 @@ body {
     align-items: center;
 }
 
-.main__promo-list-text {
+.section__promo-list-text {
     font-size: 1.8em;
     max-width: 160px;
 }
 
-.main__promo-list-text-line {
+.section__promo-list-text-line {
     color: #666666;
 }
 
-.main__promo-list-text-paragraph {
+.section__promo-list-text-paragraph {
     color: #85859B;
 }
 
-.main__promo-paper {
+.section__promo-paper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.main__promo-paper-text {
+.section__promo-paper-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.main__promo-paper-text-heading {
+.section__promo-paper-text-heading {
     font-size: 4em;
     color: #666666;
     max-width: 350px;
     line-height: 40px;
 }
 
-.main__promo-paper-text-paragraph {
+.section__promo-paper-text-paragraph {
     font-size: 1.8em;
     color: #85859B;
     max-width: 340px;
