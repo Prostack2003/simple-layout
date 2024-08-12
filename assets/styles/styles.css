@@ -156,6 +156,7 @@ body {
 
 .section__term-container {
     position: relative;
+    overflow-x: clip;
 }
 
 .section__term-text-heading {
@@ -180,10 +181,6 @@ body {
 @media screen and (max-width: 992px) {
     .main__term {
         padding-bottom: 0;
-    }
-
-    .section__term-container {
-        overflow-x: clip;
     }
 
     .section__term-text-heading {
