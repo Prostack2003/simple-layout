@@ -112,6 +112,10 @@ body {
     margin-left: 60px;
 }
 
+.header__menu-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 992px) {
     .header {
         padding-block: 30px;
@@ -147,6 +151,138 @@ body {
         padding-right: 40px;
         align-items: baseline;
     }
+}
+
+@media screen and (max-width: 576px) {
+    .header__logo {
+        margin: 0 auto 10px;
+    }
+
+    .header__menu-list {
+        display: none;
+    }
+
+    .header__buttons {
+        order: 3;
+        margin-left: auto;
+    }
+    /* Общие стили для контейнера */
+    .header__menu-mobile {
+        display: block;
+    }
+
+    /* Стили для мобильного меню */
+    .header__menu-mobile {
+        width: 100%;
+        box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    }
+
+    /* Стили для контейнера меню */
+    .header__menu-mobile-container {
+        display: block;
+        position: relative;
+        height: 0;
+    }
+
+    /* Стили для чекбокса */
+    .header__menu-mobile-checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 15px;
+        left: 0;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    /* Стили для линий гамбургера */
+    .header__menu-mobile-lines {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 15px;
+        z-index: 2;
+    }
+
+    .header__menu-mobile-line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #0e2431;
+    }
+
+    /* Переходы для линий гамбургера */
+    .header__menu-mobile-line.line1 {
+        transform-origin: 0 0;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .header__menu-mobile-line.line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .header__menu-mobile-line.line3 {
+        transform-origin: 0 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    /* Стили для списка меню */
+    .header__menu-mobile-list {
+        position: relative;
+        background-color: #EBEBEB;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 90px;
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 0;
+        padding-left: 35px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    /* Стили для элементов меню */
+    .header__menu-mobile-item {
+        list-style: none;
+        margin-bottom: 1.2rem;
+    }
+
+    .header__menu-mobile-link {
+        text-decoration: none;
+        color: #0e2431;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    /* Показать меню при активном чекбоксе */
+    .header__menu-mobile-container .header__menu-mobile-checkbox:checked ~ .header__menu-mobile-list {
+        transform: translate(-40px, -20px);
+        z-index: 1;
+    }
+
+    /* Анимация гамбургера при активации */
+    .header__menu-mobile-container .header__menu-mobile-checkbox:checked ~ .header__menu-mobile-lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    .header__menu-mobile-container .header__menu-mobile-checkbox:checked ~ .header__menu-mobile-lines .line2 {
+        transform: scaleY(0);
+    }
+
+    .header__menu-mobile-container .header__menu-mobile-checkbox:checked ~ .header__menu-mobile-lines .line3 {
+        transform: rotate(-45deg);
+    }
+
+
+
 }
 
 /* Header свойства */
@@ -192,6 +328,7 @@ body {
     }
     .section__term-text-paragraph {
         font-size: 1.6em;
+        max-width: 350px;
     }
 
     .section__term-image {
