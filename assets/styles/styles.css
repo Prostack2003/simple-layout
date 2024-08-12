@@ -190,7 +190,7 @@ body {
         display: block;
         height: 32px;
         width: 32px;
-        top: 15px;
+        top: 2px;
         left: 0;
         z-index: 5;
         opacity: 0;
@@ -205,7 +205,7 @@ body {
         height: 26px;
         width: 32px;
         position: absolute;
-        top: 15px;
+        top: 2px;
         z-index: 2;
     }
 
