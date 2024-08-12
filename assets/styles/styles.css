@@ -153,9 +153,9 @@ body {
 
 
 /* Term section свойства */
-.main__term {
-    align-items: center;
-    padding-bottom: 0;
+
+.section__term-container {
+    position: relative;
 }
 
 .section__term-text-heading {
@@ -169,7 +169,23 @@ body {
     max-width: 435px;
 }
 
+.section__term-image {
+    position: absolute;
+    top: -40px;
+    right: -300px;
+    max-width: 740px;
+    z-index: -1;
+}
+
 @media screen and (max-width: 992px) {
+    .main__term {
+        padding-bottom: 0;
+    }
+
+    .section__term-container {
+        overflow-x: clip;
+    }
+
     .section__term-text-heading {
         font-size: 4em;
         max-width: 320px;
@@ -183,6 +199,7 @@ body {
 
     .section__term-image {
         max-width: 400px;
+        right: -150px;
     }
 }
 
@@ -373,8 +390,6 @@ body {
 /* Company section свойства */
 
 /* Book section свойства */
-.main__book {
-}
 
 .section__book-container {
     position: relative;
@@ -401,6 +416,10 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+    .section__book-container {
+        overflow-x: clip;
+    }
+
     .section__book-heading {
         font-size: 3em;
     }
