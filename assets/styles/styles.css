@@ -60,6 +60,11 @@ body {
     background-color: #DAD9FB;
 }
 
+@media screen and (max-width: 768px) {
+    .button {
+        padding: 20px 60px;
+    }
+}
 /* Общие свойства */
 
 
@@ -316,18 +321,39 @@ body {
     .section__term-text-heading {
         font-size: 4em;
         max-width: 320px;
+        line-height: 50px;
     }
     .section__term-text {
         margin-bottom: 60px;
     }
     .section__term-text-paragraph {
         font-size: 1.6em;
-        max-width: 350px;
+        max-width: 330px;
     }
 
     .section__term-image {
-        max-width: 400px;
+        max-width: 500px;
         right: -150px;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section__term-text-paragraph {
+        max-width: 270px;
+    }
+    .section__term-image {
+        max-width: 400px;
+        top: -60px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section__term-image {
+        display: none;
+    }
+    .section__term-text-paragraph {
+        max-width: 100%;
     }
 }
 
@@ -425,6 +451,31 @@ body {
 
 
 }
+
+@media screen and (max-width: 768px) {
+    .section__promo-paper {
+        flex-wrap: wrap;
+    }
+    .section__promo-paper-text-heading {
+        max-width: 100%;
+    }
+    .section__promo-paper-text-paragraph {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section__promo-list {
+        flex-wrap: wrap;
+    }
+
+    .section__promo-list-item {
+        max-width: none;
+        width: 100%;
+        align-items: start;
+        flex-direction: row;
+    }
+}
 /* Promo section свойства */
 
 
@@ -473,10 +524,11 @@ body {
 @media screen and (max-width: 992px) {
     .section__marketing-container {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .section__marketing-item {
-        max-width: 320px;
+        max-width: 290px;
     }
 
     .section__marketing-paragraph {
@@ -506,12 +558,18 @@ body {
 @media screen and (max-width: 992px) {
     .section__company-container {
         flex-wrap: wrap;
-        gap: 70px;
+        gap: 90px;
         justify-content: space-between;
     }
 
     .section__company-image {
         height: 155px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section__company-container {
+        justify-content: center;
     }
 }
 
@@ -560,6 +618,28 @@ body {
     .main__book-image {
         width: 450px;
         right: -30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section__book-container {
+        flex-direction: column;
+        position: static;
+    }
+    .main__book-image {
+        position: static;
+    }
+    .section__book-text {
+        order: 2;
+    }
+    .section__book-paragraph {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main__book-image {
+        width: 350px;
     }
 }
 
