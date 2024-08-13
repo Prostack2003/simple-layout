@@ -475,6 +475,9 @@ body {
         align-items: start;
         flex-direction: row;
     }
+    .section__promo-paper-image {
+        max-width: 300px;
+    }
 }
 /* Promo section свойства */
 
@@ -524,7 +527,7 @@ body {
 @media screen and (max-width: 992px) {
     .section__marketing-container {
         flex-wrap: wrap;
-        justify-content: center;
+
     }
 
     .section__marketing-item {
@@ -533,6 +536,12 @@ body {
 
     .section__marketing-paragraph {
         font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section__marketing-container {
+        justify-content: center;
     }
 }
 
@@ -567,7 +576,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .section__company-container {
         justify-content: center;
     }
