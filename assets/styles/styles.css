@@ -404,6 +404,10 @@ body {
     align-items: center;
 }
 
+.section__promo-paper-image {
+    max-width: 600px;
+}
+
 .section__promo-paper-text {
     display: flex;
     flex-direction: column;
@@ -491,7 +495,7 @@ body {
 .section__marketing-item {
     display: flex;
     flex-direction: column;
-    max-width: 255px;
+    max-width: 215px;
 }
 
 .section__marketing-heading {
@@ -560,7 +564,7 @@ body {
 
 .section__company-image {
     border: 1px solid #C4C4C4;
-    width: 255px;
+    width: 230px;
     padding: 30px 25px;
 }
 
